@@ -1,0 +1,35 @@
+﻿@model WebStore.Models.Employee
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee</title>
+</head>
+<body>
+    <h1>Сотрудник №@Model.Id</h1>
+    <table>
+        <tr>
+            <td>@Model.Surname</td>
+        </tr>
+        <tr>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <td>@Model.Patronymus</td>
+        </tr>
+        <tr>
+            <td>@Model.Age</td>
+        </tr>
+        <tr>
+            <td>@Model.Position</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <a href="~/Home/Employees">Сотрудники</a>
+    <a href="~/Home/Index">На главную</a>
+</body>
+</html>
