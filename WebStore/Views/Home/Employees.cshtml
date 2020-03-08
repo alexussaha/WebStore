@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebStore.Models.Employee>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employees</title>
+</head>
+<body>
+    <table>
+        @foreach (var em in Model)
+        {
+            <tr>
+                <td>@em.Id</td>
+                <td>@em.Surname</td>
+                <td>@em.Name</td>
+                <td>@em.Patronymus</td>
+                <td><a href="~/Home/Employee/@em.Id">Больше информации</a></td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>
