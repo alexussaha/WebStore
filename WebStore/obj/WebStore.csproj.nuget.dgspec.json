@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usov_\\Source\\Repos\\WebStore\\WebStore\\WebStore.csproj": {}
+    "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore\\WebStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usov_\\Source\\Repos\\WebStore\\WebStore\\WebStore.csproj": {
+    "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore\\WebStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usov_\\Source\\Repos\\WebStore\\WebStore\\WebStore.csproj",
+        "projectUniqueName": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore\\WebStore.csproj",
         "projectName": "WebStore",
-        "projectPath": "C:\\Users\\usov_\\Source\\Repos\\WebStore\\WebStore\\WebStore.csproj",
+        "projectPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore\\WebStore.csproj",
         "packagesPath": "C:\\Users\\usov_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usov_\\Source\\Repos\\WebStore\\WebStore\\obj\\",
+        "outputPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -42,13 +42,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.Extensions.Logging.Debug": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.0.96, )"
             }
           },
           "imports": [
