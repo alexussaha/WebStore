@@ -432,8 +432,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cart.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\CheckOut.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Employee.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Employees.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error404.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
@@ -444,7 +442,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_Slider.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\ProductDetails.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Shop.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\SomeAction.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_Footer.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_Header.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_MainMenu.cshtml.g.cs
@@ -830,3 +827,7 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\zh-Hans\Mi
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.Views.pdb
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.csproj.CopyComplete
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_CategoryProducts.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_BrandProducts.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_PriceRange.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_Shopping.cshtml.g.cs
