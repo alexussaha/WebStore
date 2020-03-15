@@ -23,5 +23,7 @@ namespace WebStore.Infrastructure.Interfaces
         /// <returns> перечисление бренды</returns>
         IEnumerable<Brand> GetBrands();
 
+        IEnumerable<Product> GetProducts(ProductFilter Filter = null);
+
     }
 }

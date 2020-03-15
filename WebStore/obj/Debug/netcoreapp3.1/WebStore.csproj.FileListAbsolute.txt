@@ -834,3 +834,7 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.Domian.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.Domian.pdb
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Sections\Default.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Brands\Default.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Details.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Shop.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Partial\_FeaturesItems.cshtml.g.cs
