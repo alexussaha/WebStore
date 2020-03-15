@@ -8,7 +8,7 @@ using WebStore.Models;
 
 namespace WebStore.Infrastructure.Services
 {
-    public class InMemoryEmployeesData : IEmployeeData
+    public class InMemoryEmployeesData : IEmployeesData
     {
         private readonly List<Employee> __Employees = TestData.Employees;
 

@@ -831,3 +831,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_BrandProducts.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_PriceRange.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_Shopping.cshtml.g.cs
+C:\Users\usov_\Source\Repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Edit.cshtml.g.cs
+C:\Users\usov_\Source\Repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Delete.cshtml.g.cs
+C:\Users\usov_\Source\Repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Create.cshtml.g.cs
