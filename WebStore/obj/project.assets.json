@@ -2046,6 +2046,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "WebStore.Domian/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/WebStore.Domian.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebStore.Domian.dll": {}
+        }
       }
     }
   },
@@ -6685,6 +6695,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "WebStore.Domian/1.0.0": {
+      "type": "project",
+      "path": "../WebStore.Domian/WebStore.Domian.csproj",
+      "msbuildProject": "../WebStore.Domian/WebStore.Domian.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6692,7 +6707,8 @@
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.2",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
-      "Microsoft.Web.LibraryManager.Build >= 2.0.96"
+      "Microsoft.Web.LibraryManager.Build >= 2.0.96",
+      "WebStore.Domian >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6725,7 +6741,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj": {
+              "projectPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
