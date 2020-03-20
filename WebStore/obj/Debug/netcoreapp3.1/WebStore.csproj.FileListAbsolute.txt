@@ -416,8 +416,6 @@ C:\Users\usov_\OneDrive\Рабочий стол\WebStore_20_03-Lesson-2\WebStore
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.csprojAssemblyReference.cache
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\staticwebassets\WebStore.StaticWebAssets.Manifest.cache
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\staticwebassets\WebStore.StaticWebAssets.xml
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.RazorAssemblyInfo.cache
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.RazorAssemblyInfo.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.AssemblyInfoInputs.cache
@@ -862,3 +860,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.DAL.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.DAL.pdb
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cache
