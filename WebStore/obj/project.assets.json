@@ -2697,6 +2697,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WebStore.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "WebStore.Domian": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebStore.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebStore.DAL.dll": {}
+        }
+      },
       "WebStore.Domian/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -8721,6 +8734,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "WebStore.DAL/1.0.0": {
+      "type": "project",
+      "path": "../WebStore.DAL/WebStore.DAL.csproj",
+      "msbuildProject": "../WebStore.DAL/WebStore.DAL.csproj"
+    },
     "WebStore.Domian/1.0.0": {
       "type": "project",
       "path": "../WebStore.Domian/WebStore.Domian.csproj",
@@ -8733,6 +8751,7 @@
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
       "Microsoft.Web.LibraryManager.Build >= 2.0.96",
+      "WebStore.DAL >= 1.0.0",
       "WebStore.Domian >= 1.0.0"
     ]
   },
@@ -8767,6 +8786,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.DAL\\WebStore.DAL.csproj": {
+              "projectPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.DAL\\WebStore.DAL.csproj"
+            },
             "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj": {
               "projectPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj"
             }
