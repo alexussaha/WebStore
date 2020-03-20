@@ -30,7 +30,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj": {
+                "projectPath": "C:\\Users\\usov_\\source\\repos\\WebStore\\WebStore.Domian\\WebStore.Domian.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
