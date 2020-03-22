@@ -434,6 +434,7 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_CategoryTab.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_FeaturesItems.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_LeftSideBar.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_RecomendedItems.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_Slider.cshtml.g.cs
@@ -862,4 +863,3 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.D
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_FeaturesItems.cshtml.g.cs
