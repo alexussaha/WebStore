@@ -32,6 +32,6 @@ namespace WebStore.ViewModels
         [Required(ErrorMessage = "Не указан возраст!")]
         [Range(18, 75, ErrorMessage = "Возраст в интервале от 18 до 75")]
         public int Age { get; set; }
-
+        public string Position { get; internal set; }
     }
 }
