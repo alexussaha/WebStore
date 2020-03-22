@@ -15,13 +15,4 @@ namespace WebStore.Domian.Entities.Base
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
     }
-    
-    /// <summary>
-    /// Именованная сущность
-    /// </summary>
-    public abstract class NamedEntity : BaseEntity, INamedEntity
-    {
-        [Required]
-        public string Name { get; set; }
-    }
 }
