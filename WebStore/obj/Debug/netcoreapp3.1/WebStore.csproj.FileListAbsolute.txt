@@ -432,9 +432,7 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error404.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_CategoryTab.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_FeaturesItems.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_LeftSideBar.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_RecomendedItems.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial\_Slider.cshtml.g.cs
@@ -478,8 +476,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Micro
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -558,8 +554,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Micro
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
@@ -577,7 +571,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Micro
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\mscorlib.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\netstandard.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.AppContext.dll
@@ -602,7 +595,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Syste
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
@@ -628,7 +620,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Syste
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Linq.dll
@@ -684,19 +675,14 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Syste
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
@@ -721,7 +707,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\Syste
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Web.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Windows.dll
-C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Xml.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
@@ -863,3 +848,15 @@ C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\WebStore.D
 C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.csproj.CoreCompileInputs.cache
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_FeaturesItems.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.genruntimeconfig.cache
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\UserInfo\Default.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\UserInfo\UserInfo.cshtml.g.cs

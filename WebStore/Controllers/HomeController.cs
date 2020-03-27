@@ -1,56 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace WebStore.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult Error404()
-        {
-            return View();
-        }
+        public IActionResult Index() => View();
 
-        public IActionResult Blog()
-        {
-            return View();
-        }
+        public IActionResult Throw(string id) => throw new ApplicationException(id);
 
-        public IActionResult BlogSingle()
-        {
-            return View();
-        }
+        public IActionResult SomeAction() => View();
 
-        public IActionResult Cart()
-        {
-            return View();
-        }
+        public IActionResult Error404() => View();
 
-        public IActionResult CheckOut()
-        {
-            return View();
-        }
+        public IActionResult Blog() => View();
 
-        public IActionResult ContactUs()
-        {
-            return View();
-        }
+        public IActionResult BlogSingle() => View();
 
-        public IActionResult Login()
-        {
-            return View();
-        }
+        public IActionResult Cart() => View();
 
-        public IActionResult Shop()
-        {
-            return View();
-        }
+        public IActionResult CheckOut() => View();
 
-        public IActionResult ProductDetails()
-        {
-            return View();
-        }
+        public IActionResult ContactUs() => View();
     }
 }
