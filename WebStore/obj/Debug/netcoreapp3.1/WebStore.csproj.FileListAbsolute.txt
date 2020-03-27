@@ -823,7 +823,6 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Index.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blog.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogSingle.cshtml.g.cs
-C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cart.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\CheckOut.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\ContactUs.cshtml.g.cs
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error404.cshtml.g.cs
@@ -861,3 +860,4 @@ C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.d
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.pdb
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\WebStore.genruntimeconfig.cache
 C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Partial\_LeftSideBar.cshtml.g.cs
+C:\Users\usov_\source\repos\WebStore\WebStore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Details.cshtml.g.cs
