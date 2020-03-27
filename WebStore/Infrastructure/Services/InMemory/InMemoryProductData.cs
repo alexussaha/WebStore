@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WebStore.Data;
 using WebStore.Domian.Entities;
 using WebStore.Infrastructure.Interfaces;
@@ -30,6 +28,11 @@ namespace WebStore.Infrastructure.Services.InMemory
                 query = query.Where(product => product.BrandId == Filter.BrandId);
 
             return query;
+        }
+
+        public Product GetProductById(int id)
+        {
+            return TestData.Products.FirstOrDefault(p => p.Id == id);
         }
     }
 }
