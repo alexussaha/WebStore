@@ -40,5 +40,11 @@ namespace WebStore.Infrastructure.Services.InSQL
         public IEnumerable<Section> GetSections()=> _db.Sections
             .Include(section => section.Products)
             .AsEnumerable();
+
+
+        public Product GetProductById(int id) => _db.Products
+           .Include(p => p.Brand)
+           .Include(p => p.Section)
+           .FirstOrDefault(p => p.Id == id);
     }
 }

@@ -1,18 +1,27 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebStore.DAL.Context;
+using WebStore.Domian.Entities.Identity;
 
 namespace WebStore.Data
 {
     public class WebStoreDBInitialaizer
     {
         private readonly WebStoreDB _db;
+        private readonly UserManager<User> _UserManager;
+        private readonly RoleManager<Role> _RoleManager;
 
-        public WebStoreDBInitialaizer(WebStoreDB db) => _db = db;
 
+        public WebStoreDBInitialaizer(WebStoreDB db, UserManager<User> UserManager, RoleManager<Role> RoleManager)
+        {
+            _UserManager = UserManager;
+            _RoleManager = RoleManager;
+            _db = db;
+        }
         public void Initialize() => InitializeAsync().Wait();
 
         public async Task InitializeAsync()
@@ -21,9 +30,18 @@ namespace WebStore.Data
 
             await db.MigrateAsync().ConfigureAwait(false);
 
-            if (await _db.Products.AnyAsync()) return;
+            await InitializeIdentityAsync().ConfigureAwait(false);
 
-            using(var transactions = await db.BeginTransactionAsync().ConfigureAwait(false))
+            await InitialazeProductsAsync().ConfigureAwait(false);
+            
+        }
+
+        private async Task InitialazeProductsAsync()
+        {
+            if (await _db.Products.AnyAsync()) return;
+            var db = _db.Database;
+
+            using (var transactions = await db.BeginTransactionAsync().ConfigureAwait(false))
             {
                 await _db.Sections.AddRangeAsync(TestData.Sections).ConfigureAwait(false);
 
@@ -62,5 +80,33 @@ namespace WebStore.Data
                 await transactions.CommitAsync().ConfigureAwait(false);
             }
         }
+
+        private async Task InitializeIdentityAsync()
+        {
+            if (!await _RoleManager.RoleExistsAsync(Role.Administrator))
+                await _RoleManager.CreateAsync(new Role { Name = Role.Administrator });
+
+            if (!await _RoleManager.RoleExistsAsync(Role.User))
+                await _RoleManager.CreateAsync(new Role { Name = Role.User });
+
+            if (await _UserManager.FindByNameAsync(User.Administrator) is null)
+            {
+                var admin = new User
+                {
+                    UserName = User.Administrator,
+                    //Email = "amin@server.com"
+                };
+
+                var create_result = await _UserManager.CreateAsync(admin, User.AdminDefaultPassword);
+                if (create_result.Succeeded)
+                    await _UserManager.AddToRoleAsync(admin, Role.Administrator);
+                else
+                {
+                    var errors = create_result.Errors.Select(error => error.Description);
+                    throw new InvalidOperationException($"Ошибка при создании пользователя - Администратора: {string.Join(", ", errors)}");
+                }
+            }
+        }
+
     }
 }

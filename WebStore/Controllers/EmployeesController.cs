@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WebStore.Domian.Entities.Identity;
 using WebStore.Infrastructure.Interfaces;
 using WebStore.Models;
 using WebStore.ViewModels;
 
 namespace WebStore.Controllers
 {
+    [Authorize]
     public class EmployeesController : Controller
     {
         private readonly IEmployeesData _EmployeesData;
@@ -47,11 +50,13 @@ namespace WebStore.Controllers
             });
         }
 
+        [Authorize(Roles = Role.Administrator)]
         public IActionResult Create()
         {
             return View(new EmployeeViewModel());
         }
 
+        [Authorize(Roles = Role.Administrator)]
         [HttpPost]
         public IActionResult Create(EmployeeViewModel Employee)
         {
@@ -73,6 +78,7 @@ namespace WebStore.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = Role.Administrator)]
         public IActionResult Edit(int? Id)
         {
             if (Id is null) return View(new EmployeeViewModel());
@@ -94,6 +100,7 @@ namespace WebStore.Controllers
             });
         }
 
+        [Authorize(Roles = Role.Administrator)]
         [HttpPost]
         public IActionResult Edit(EmployeeViewModel Employee)
         {
@@ -126,6 +133,7 @@ namespace WebStore.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = Role.Administrator)]
         public IActionResult Delete(int id)
         {
             if (id <= 0) return BadRequest();
@@ -144,6 +152,7 @@ namespace WebStore.Controllers
             });
         }
 
+        [Authorize(Roles = Role.Administrator)]
         public IActionResult DeleteConfirmed(int id)
         {
             _EmployeesData.Delete(id);
