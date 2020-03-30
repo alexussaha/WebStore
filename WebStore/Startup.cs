@@ -66,6 +66,7 @@ namespace WebStore
             services.AddSingleton<IEmployeesData, InMemoryEmployeesData>();
             services.AddScoped<IProductData, SqlProductData>();
             services.AddScoped<ICartService, CookiesCartService>();
+            services.AddScoped<IOrderService, SqlOrderService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, WebStoreDBInitialaizer db)
@@ -90,8 +91,16 @@ namespace WebStore
             {
 
                 endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+
+                endpoints.MapControllerRoute(
                     name: "default", 
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                
+
             });
         }
     }
