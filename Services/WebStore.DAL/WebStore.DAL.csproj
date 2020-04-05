@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebStore.Domian\WebStore.Domian.csproj" />
+    <ProjectReference Include="..\..\Common\WebStore.Domian\WebStore.Domian.csproj" />
   </ItemGroup>
 
 </Project>
