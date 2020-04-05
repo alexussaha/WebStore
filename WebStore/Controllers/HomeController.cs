@@ -9,7 +9,7 @@ namespace WebStore.Controllers
 
         public IActionResult Throw(string id) => throw new ApplicationException(id);
 
-        public IActionResult SomeAction() => View();
+        //public IActionResult SomeAction() => View();
 
         public IActionResult Error404() => View();
 

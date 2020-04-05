@@ -24,7 +24,7 @@ namespace WebStore.Data
         }
         public void Initialize() => InitializeAsync().Wait();
 
-        public async Task InitializeAsync()
+        private async Task InitializeAsync()
         {
             var db = _db.Database;
 
