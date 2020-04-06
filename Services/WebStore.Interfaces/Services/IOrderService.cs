@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebStore.Domian.Entities.Orders;
-using WebStore.ViewModels;
-using WebStore.ViewModels.Orders;
+using WebStore.Domian.ViewModels;
+using WebStore.Domian.ViewModels.Orders;
 
-namespace WebStore.Infrastructure.Interfaces
+namespace WebStore.Interfaces.Services
 {
     public interface IOrderService
     {

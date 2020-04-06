@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebStore.Models;
+﻿using System.Collections.Generic;
 using WebStore.Domian.Entities;
+using WebStore.Domian.Models;
 
-namespace WebStore.Data
+namespace WebStore.Services.Data
 {
-    public class TestData
+    internal class TestData
     {
 
         public static List<Employee> Employees { get; } = new List<Employee>

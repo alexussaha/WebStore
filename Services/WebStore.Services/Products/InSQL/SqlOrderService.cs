@@ -1,17 +1,17 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using WebStore.DAL.Context;
 using WebStore.Domian.Entities.Identity;
 using WebStore.Domian.Entities.Orders;
-using WebStore.Infrastructure.Interfaces;
-using WebStore.ViewModels;
-using WebStore.ViewModels.Orders;
+using WebStore.Domian.ViewModels;
+using WebStore.Domian.ViewModels.Orders;
+using WebStore.Interfaces.Services;
 
-namespace WebStore.Infrastructure.Services.InSQL
+namespace WebStore.Services.Products.InSQL
 {
     public class SqlOrderService : IOrderService
     {

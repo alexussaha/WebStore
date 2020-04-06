@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebStore.Infrastructure.Interfaces;
-using WebStore.ViewModels;
-using WebStore.ViewModels.Orders;
+using WebStore.Interfaces.Services;
+using WebStore.Domian.ViewModels;
+using WebStore.Domian.ViewModels.Orders;
+
 
 namespace WebStore.Controllers
 {
@@ -15,11 +16,14 @@ namespace WebStore.Controllers
 
         public CartController(ICartService CartService) => _CartService = CartService;
 
-        public IActionResult Details() => View(new CartOrderViewModel
+        public IActionResult Details()
         {
-            CartViewModel = _CartService.TransformFromCart(),
-            OrderViewModel = new OrderViewModel()
-        });
+            return View(new CartOrderViewModel
+            {
+                CartViewModel = _CartService.TransformFromCart(),
+                OrderViewModel = new OrderViewModel()
+            });
+        }
 
         public IActionResult AddToCart(int id)
         {

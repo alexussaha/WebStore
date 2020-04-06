@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WebStore.Domian.Entities;
-using WebStore.ViewModels;
+using WebStore.Domian.ViewModels;
 
-namespace WebStore.Infrastructure.Mapping
+namespace WebStore.Services.Mapping
 {
     public static class ProductMapping
     {

@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebStore.Domian.ViewModels.Identity
-    {
-        public class LoginViewModel
+{
+    public class LoginViewModel
         {
             [Required]
             [MaxLength(256)]
