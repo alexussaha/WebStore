@@ -14,7 +14,7 @@ namespace WebStore.Interfaces.Api
 
         string Get(int id);
 
-        Task<string> GeAsync(int id);
+        Task<string> GetAsync(int id);
 
         Uri Post(string value);
 
