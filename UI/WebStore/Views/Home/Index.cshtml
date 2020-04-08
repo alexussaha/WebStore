@@ -1,0 +1,35 @@
+﻿@using WebStore.Interfaces.Services
+<partial name="Partial/_Slider" />
+
+<section>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <partial name="Partial/_LeftSideBar" />
+            </div>
+
+            <div class="col-sm-9 padding-right">
+              
+                @inject IProductData cataog;
+                @{ 
+                    var products = cataog.GetProducts().Select(p => new ProductViewModel
+                    {
+                        Id = p.Id,
+                        Name = p.Name,
+                        Order = p.Order,
+                        ImageUrl = p.ImageUrl,
+                        Price = p.Price
+                    });
+                    
+                }
+
+                <partial name="Partial/_FeaturesItems" model="@products"/>
+
+                <partial name="Partial/_CategoryTab"/>
+
+                <partial name="Partial/_RecomendedItems"/>
+            </div>
+        </div>
+    </div>
+</section>
