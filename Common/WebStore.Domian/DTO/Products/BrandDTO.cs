@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 using WebStore.Domian.Entities.Base.Interfaces;
 
-namespace WebStore.ViewModels
+namespace WebStore.Domian.DTO.Products
 {
-    public class BrandViewModel : INamedEntity, IOrderedEntity
+    public class BrandDTO : INamedEntity
     {
         public int Id { get; set; }
-
         public string Name { get; set; }
-
-        public int Order { get; set; }
     }
 }

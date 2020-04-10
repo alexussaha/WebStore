@@ -9,20 +9,20 @@ namespace WebStore.Services.Products.InMemory
 {
     public class InMemoryEmployeesData : IEmployeesData
     {
-        private readonly List<Employee> __Employees = TestData.Employees;
+        private readonly List<Employee> _Employees = TestData.Employees;
 
-        public IEnumerable<Employee> GetAll() => __Employees;
+        public IEnumerable<Employee> GetAll() => _Employees;
 
-        public Employee GetById(int id) => __Employees.FirstOrDefault(e => e.Id == id);
+        public Employee GetById(int id) => _Employees.FirstOrDefault(e => e.Id == id);
 
         public void Add(Employee Employee)
         {
             if (Employee is null)
                 throw new ArgumentNullException(nameof(Employee));
 
-            if (__Employees.Contains(Employee)) return;
-            Employee.Id = __Employees.Count == 0 ? 1 : __Employees.Max(e => e.Id) + 1;
-            __Employees.Add(Employee);
+            if (_Employees.Contains(Employee)) return;
+            Employee.Id = _Employees.Count == 0 ? 1 : _Employees.Max(e => e.Id) + 1;
+            _Employees.Add(Employee);
         }
 
         public void Edit(int id, Employee Employee)
@@ -30,27 +30,28 @@ namespace WebStore.Services.Products.InMemory
             if (Employee is null)
                 throw new ArgumentNullException(nameof(Employee));
 
-            if (__Employees.Contains(Employee)) return;
+            if (_Employees.Contains(Employee)) return;
 
-            var db__Employee = GetById(id);
-            if (db__Employee is null)
+            var db_employee = GetById(id);
+            if (db_employee is null)
                 return;
 
-            db__Employee.SurName = Employee.SurName;
-            db__Employee.FirstName = Employee.FirstName;
-            db__Employee.Patronymic = Employee.Patronymic;
-            db__Employee.Age = Employee.Age;
+            db_employee.SurName = Employee.SurName;
+            db_employee.FirstName = Employee.FirstName;
+            db_employee.Patronymic = Employee.Patronymic;
+            db_employee.Age = Employee.Age;
         }
 
         public bool Delete(int id)
         {
-            var db__Employee = GetById(id);
-            if (db__Employee is null)
+            var db_employee = GetById(id);
+            if (db_employee is null)
                 return false;
 
-            return __Employees.Remove(db__Employee);
+            return _Employees.Remove(db_employee);
         }
 
         public void SaveChanges() { }
     }
 }
+

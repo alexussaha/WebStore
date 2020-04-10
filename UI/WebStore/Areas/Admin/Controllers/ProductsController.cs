@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebStore.Domian.Entities;
 using WebStore.Domian.Entities.Identity;
 using WebStore.Interfaces.Services;
+using WebStore.Services.Mapping;
 
 namespace WebStore.Areas.Admin.Controllers
 {
@@ -17,11 +18,11 @@ namespace WebStore.Areas.Admin.Controllers
 
         public ProductsController(IProductData ProductData) => _ProductData = ProductData;
 
-        public IActionResult Index(/*[FromServices] IProductData Products*/) => View(_ProductData.GetProducts());
+        public IActionResult Index(/*[FromServices] IProductData Products*/) => View(_ProductData.GetProducts().Select(p => p.FromDTO()));
 
         public IActionResult Edit(int? id)
         {
-            var product = id is null ? new Product() : _ProductData.GetProductById((int)id);
+            var product = id is null ? new Product() : _ProductData.GetProductById((int)id).FromDTO();
 
             if (product is null)
                 return NotFound();
@@ -36,7 +37,7 @@ namespace WebStore.Areas.Admin.Controllers
             if (product is null)
                 return NotFound();
 
-            return View(product);
+            return View(product.FromDTO());
         }
 
         [HttpPost, ValidateAntiForgeryToken, ActionName(nameof(Delete))]
