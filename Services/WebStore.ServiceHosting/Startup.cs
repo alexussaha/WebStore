@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using WebStore.DAL.Context;
 using WebStore.Domian.Entities.Identity;
 using WebStore.Interfaces.Services;
@@ -77,6 +78,11 @@ namespace WebStore.ServiceHosting
                 .AddDefaultTokenProviders();
 
             #endregion
+
+            services.AddSwaggerGen(opt =>
+                {
+                    opt.SwaggerDoc("v1", new OpenApiInfo {Title = "WebStore.WebAPI", Version = "v1"});
+                });
         }
 
        
@@ -93,6 +99,14 @@ namespace WebStore.ServiceHosting
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(opt =>
+            {
+                opt.SwaggerEndpoint("/swagger/v1/swagger.json", "WebStore.API");
+
+                opt.RoutePrefix = string.Empty;
+            });
 
             app.UseEndpoints(endpoints =>
             {
