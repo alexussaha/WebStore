@@ -35,14 +35,26 @@ namespace WebStore.ServiceHosting
         {
             services.AddControllers();
 
+            #region Сервисы бизнес - логики
+
             services.AddSingleton<IEmployeesData, InMemoryEmployeesData>();
             services.AddScoped<IProductData, SqlProductData>();
             services.AddScoped<IOrderService, SqlOrderService>();
             services.AddScoped<ICartService, CookiesCartService>();
+
+            #endregion
+
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            #region База  данных
 
             services.AddDbContext<WebStoreDB>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            #endregion
+
+            #region Identity
 
             services.AddIdentity<User, Role>(opt =>
                 {
@@ -60,6 +72,8 @@ namespace WebStore.ServiceHosting
                 })
                 .AddEntityFrameworkStores<WebStoreDB>()
                 .AddDefaultTokenProviders();
+
+            #endregion
         }
 
        
