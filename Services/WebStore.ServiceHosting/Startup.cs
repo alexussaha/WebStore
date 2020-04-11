@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using WebStore.DAL.Context;
 using WebStore.Domian.Entities.Identity;
 using WebStore.Interfaces.Services;
+using WebStore.Services.Data;
 using WebStore.Services.Products.InCookies;
 using WebStore.Services.Products.InMemory;
 using WebStore.Services.Products.InSQL;
@@ -52,6 +53,8 @@ namespace WebStore.ServiceHosting
             services.AddDbContext<WebStoreDB>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddTransient<WebStoreDBInitialaizer>();
+
             #endregion
 
             #region Identity
@@ -77,8 +80,11 @@ namespace WebStore.ServiceHosting
         }
 
        
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, WebStoreDBInitialaizer db)
         {
+
+            db.Initialize();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -11,7 +11,6 @@ using WebStore.Clients.Identity;
 using WebStore.Clients.Orders;
 using WebStore.Clients.Products;
 using WebStore.Clients.Values;
-using WebStore.DAL.Context;
 using WebStore.Domian.Entities.Identity;
 using WebStore.Interfaces.Api;
 using WebStore.Interfaces.Services;
@@ -30,12 +29,9 @@ namespace WebStore
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WebStoreDB>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddTransient<WebStoreDBInitialaizer>();
+            
 
             services.AddIdentity<User, Role>()
-                //.AddEntityFrameworkStores<WebStoreDB>()
                 .AddDefaultTokenProviders();
 
             #region WebAPI Identity Clients stores
