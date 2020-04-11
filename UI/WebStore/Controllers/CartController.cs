@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebStore.Domian.DTO.Orders;
 using WebStore.Interfaces.Services;
 using WebStore.Domian.ViewModels;
 using WebStore.Domian.ViewModels.Orders;
@@ -16,14 +17,11 @@ namespace WebStore.Controllers
 
         public CartController(ICartService CartService) => _CartService = CartService;
 
-        public IActionResult Details()
+        public IActionResult Details() => View(new CartOrderViewModel
         {
-            return View(new CartOrderViewModel
-            {
-                CartViewModel = _CartService.TransformFromCart(),
-                OrderViewModel = new OrderViewModel()
-            });
-        }
+            CartViewModel = _CartService.TransformFromCart(),
+            OrderViewModel = new OrderViewModel()
+        });
 
         public IActionResult AddToCart(int id)
         {
@@ -58,7 +56,20 @@ namespace WebStore.Controllers
                     OrderViewModel = Model
                 });
 
-            var order = await OrderService.CreateOrderAsync(User.Identity.Name, _CartService.TransformFromCart(), Model);
+            var order_model = new CreateOrderModel
+            {
+                OrderViewModel = Model,
+                OrderItems = _CartService.TransformFromCart().Items
+                   .Select(item => new OrderItemDTO
+                   {
+                       Id = item.Key.Id,
+                       Price = item.Key.Price,
+                       Quantity = item.Value
+                   })
+                   .ToList()
+            };
+
+            var order = await OrderService.CreateOrderAsync(User.Identity.Name, order_model);
 
             _CartService.RemoveAll();
 
