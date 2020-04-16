@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using WebStore.DAL.Context;
 using WebStore.Domian.Entities.Identity;
@@ -82,8 +83,10 @@ namespace WebStore.ServiceHosting
         }
 
        
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, WebStoreDBInitialaizer db)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, WebStoreDBInitialaizer db, ILoggerFactory log)
         {
+
+            //log.AddLog4Net();
 
             db.Initialize();
 
