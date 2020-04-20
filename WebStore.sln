@@ -26,7 +26,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.Interfaces", "Serv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.ServiceHosting", "Services\WebStore.ServiceHosting\WebStore.ServiceHosting.csproj", "{B4A22FD9-42E0-4E6B-9F5A-DCD707E33ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore.Clients", "Services\WebStore.Clients\WebStore.Clients.csproj", "{F70A43FD-58F9-4C27-825F-E61B15BE3F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore.Clients", "Services\WebStore.Clients\WebStore.Clients.csproj", "{F70A43FD-58F9-4C27-825F-E61B15BE3F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore.Logger", "WebStore.Logger\WebStore.Logger.csproj", "{24937878-FC52-45D7-8AF9-D34DD2A71FEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{F70A43FD-58F9-4C27-825F-E61B15BE3F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70A43FD-58F9-4C27-825F-E61B15BE3F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70A43FD-58F9-4C27-825F-E61B15BE3F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24937878-FC52-45D7-8AF9-D34DD2A71FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24937878-FC52-45D7-8AF9-D34DD2A71FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24937878-FC52-45D7-8AF9-D34DD2A71FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24937878-FC52-45D7-8AF9-D34DD2A71FEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{2040CD11-E46E-466C-8FC7-7719C414ED47} = {3C92F969-7D3C-49D3-8610-A834F31A9534}
 		{B4A22FD9-42E0-4E6B-9F5A-DCD707E33ACB} = {3C92F969-7D3C-49D3-8610-A834F31A9534}
 		{F70A43FD-58F9-4C27-825F-E61B15BE3F69} = {3C92F969-7D3C-49D3-8610-A834F31A9534}
+		{24937878-FC52-45D7-8AF9-D34DD2A71FEB} = {9CDD2996-9646-4AFB-87A1-07C76AD7F5E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {03B48D7A-D1FA-42B8-B4B5-E9BA9125FA87}
