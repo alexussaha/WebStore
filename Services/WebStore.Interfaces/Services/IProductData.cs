@@ -15,11 +15,15 @@ namespace WebStore.Interfaces.Services
         /// <returns> перечисление секций</returns>
         IEnumerable<Section> GetSections();
 
+        SectionDTO GetSectionById(int id);
+
         /// <summary>
         /// Получить бренды
         /// </summary>
         /// <returns> перечисление бренды</returns>
         IEnumerable<Brand> GetBrands();
+
+        BrandDTO GetBrandById(int id);
 
         /// <summary>
         /// Товар из каталога
