@@ -4,40 +4,29 @@ using WebStore.Domian.Entities;
 
 namespace WebStore.Interfaces.Services
 {
-    /// <summary>
-    /// Каталог товаров
-    /// </summary>
+    /// <summary>Каталог товаров</summary>
     public interface IProductData
     {
-        /// <summary>
-        /// Получить секции
-        /// </summary>
-        /// <returns> перечисление секций</returns>
+        /// <summary>Получить все секции</summary>
+        /// <returns>Перечисление секций каталога</returns>
         IEnumerable<Section> GetSections();
 
         SectionDTO GetSectionById(int id);
 
-        /// <summary>
-        /// Получить бренды
-        /// </summary>
-        /// <returns> перечисление бренды</returns>
+        /// <summary>Получить все бренды</summary>
+        /// <returns>Перечисление брендов каталога</returns>
         IEnumerable<Brand> GetBrands();
 
         BrandDTO GetBrandById(int id);
 
-        /// <summary>
-        /// Товар из каталога
-        /// </summary>
-        /// <param name="Filter">критерий фильтрации (поиска)</param>
-        /// <returns>Искомые товары из каталога</returns>
-        IEnumerable<ProductDTO> GetProducts(ProductFilter Filter = null);
+        /// <summary>Товары из каталога</summary>
+        /// <param name="Filter">Критерий поиска/фильтрации</param>
+        /// <returns>Искомые товары из каталога товаров</returns>
+        PagedProductsDTO GetProducts(ProductFilter Filter = null);
 
-        /// <summary>
-        /// получить товар по id
-        /// </summary>
-        /// <param name="id">id товара</param>
+        /// <summary>Получить товар по идентификатору</summary>
+        /// <param name="id">Идентификатор требуемого товара</param>
         /// <returns>Товар</returns>
         ProductDTO GetProductById(int id);
-
     }
 }

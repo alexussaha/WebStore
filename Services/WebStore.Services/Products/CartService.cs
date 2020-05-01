@@ -67,19 +67,20 @@ namespace WebStore.Services.Products
         {
             var cart_items = _CartStore.Cart.Items;
             var products = _ProductData
-               .GetProducts(new ProductFilter
-               {
-                   Ids = cart_items.Select(item => item.ProductId).ToList()
-               })
-               .Select(p => p.FromDTO())
-               .ToView()
-               .ToDictionary(p => p.Id);
+                .GetProducts(new ProductFilter
+                {
+                    Ids = cart_items.Select(item => item.ProductId).ToList()
+                })
+                .Products
+                .Select(p => p.FromDTO())
+                .ToView()
+                .ToDictionary(p => p.Id);
 
             return new CartViewModel
             {
                 Items = cart_items
-                   .Where(item => products.ContainsKey(item.ProductId))
-                   .ToDictionary(
+                    .Where(item => products.ContainsKey(item.ProductId))
+                    .ToDictionary(
                         item => products[item.ProductId],
                         item => item.Quantity
                     )
