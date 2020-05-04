@@ -12,6 +12,7 @@ using WebStore.Clients.Orders;
 using WebStore.Clients.Products;
 using WebStore.Clients.Values;
 using WebStore.Domian.Entities.Identity;
+using WebStore.Hubs;
 using WebStore.Interfaces.Api;
 using WebStore.Interfaces.Services;
 using WebStore.Services.Products;
@@ -27,7 +28,7 @@ namespace WebStore
 
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            services.AddSignalR();
 
             services.AddIdentity<User, Role>()
                 .AddDefaultTokenProviders();
@@ -114,6 +115,7 @@ namespace WebStore
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<InformationHub>("/info");
 
                 endpoints.MapControllerRoute(
                     name: "areas",
